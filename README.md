@@ -1,8 +1,8 @@
-# GeoSound
+# Geo-ESC
 
 **Note**: This repository is a demo showcasing the analysis results. The full dataset will be updated here once the paper is accepted.
 
-GeoSound is a dataset designed to enhance audio tagging performance by introducing contextual information through Point-of-Interest (POI) labels. It provides a unique connection between audio events and their geographical context, offering a novel approach to address the limitations of existing audio-only datasets.
+Geo-ESC is a dataset designed to enhance audio tagging performance by introducing contextual information through Point-of-Interest (POI) labels. It provides a unique connection between audio events and their geographical context, offering a novel approach to address the limitations of existing audio-only datasets.
 
 ---
 
@@ -20,7 +20,7 @@ GeoSound is a dataset designed to enhance audio tagging performance by introduci
 
 ## Data Collection
 
-The audio recordings for GeoSound were sourced from **Freesound.org**, a public repository of user-contributed sounds, and from the dataset presented in Filipan et al. (2014). The recordings include GPS metadata, specifically latitude and longitude coordinates, which were used to link each sound clip to its geographic context. A careful manual review was performed to ensure the accuracy of the location data.
+The audio recordings for Geo-ESC were sourced from **Freesound.org**, a public repository of user-contributed sounds, and from the dataset presented in Filipan et al. (2014). The recordings include GPS metadata, specifically latitude and longitude coordinates, which were used to link each sound clip to its geographic context. A careful manual review was performed to ensure the accuracy of the location data.
 
 ---
 
@@ -109,21 +109,21 @@ Below are the results of the zero-shot audio classification, with 3 models evalu
 
 The fine-tuned classification results (`mAP`) across 28 fine-grained categories and 3 coarse categories are presented in the table below:
 
-| Model   | Audio-Only | Multimodal |
+| Model   | Audio-Only | Multimodal(Mid-Fusion) |
 |---------|-----------------|---------------|
 | **PANNs**| 0.770      | 0.824      |
 | **AST**  | 0.820      | 0.829      |
 | **CLAP** | 0.824      | 0.842      |
 
-*Table 1. 28 fine-grained categories Fine-Tuned Classification Results on GeoSound Dataset.*
+*Table 1. 28 fine-grained categories Fine-Tuned Classification Results on Geo-ESC Dataset.*
 
-| Model   | Audio-Only | Multimodal |
+| Model   | Audio-Only | Multimodal(Mid-Fusion) |
 |---------|-----------------|---------------|
 | **PANNs**| 0.961      | 0.964      |
 | **AST**  | 0.904      | 0.912      |
 | **CLAP** | 0.966      | 0.968      |
 
-*Table 2. 3 coarse categories Fine-Tuned Classification Results on GeoSound Dataset.*
+*Table 2. 3 coarse categories Fine-Tuned Classification Results on Geo-ESC Dataset.*
 
 ---
 
